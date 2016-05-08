@@ -1,0 +1,12 @@
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\bin\Debug\PhaseShiftCareerEditor.exe.config
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\bin\Debug\PhaseShiftCareerEditor.exe
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\bin\Debug\PhaseShiftCareerEditor.pdb
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.Properties.Resources.resources
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.csproj.GenerateResource.Cache
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.exe
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.pdb
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.frmMain.resources
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.NewEditCareerDialog.resources
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.NewEditTierDialog.resources
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.NewFolder.resources
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.BigErrorDialog.resources
