@@ -10,3 +10,4 @@ C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\
 C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.NewEditTierDialog.resources
 C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.NewFolder.resources
 C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.BigErrorDialog.resources
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Debug\PhaseShiftCareerEditor.csprojResolveAssemblyReference.cache

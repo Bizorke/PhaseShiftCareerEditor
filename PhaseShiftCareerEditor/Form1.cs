@@ -680,6 +680,10 @@ namespace PhaseShiftCareerEditor
 					foreach (var s in listOfSongs)
 					{
 						lstFiles.Items.Add(s, instrumentIconIndex);
+
+						if (txtSongSearch.Text != "" && listOfSongs.Count == 1) {
+							lstFiles.Items[lstFiles.Items.Count - 1].Selected = true;
+						}
 					}
 				}
 			}
@@ -1074,6 +1078,21 @@ namespace PhaseShiftCareerEditor
 					string temppath = Path.Combine(destDirName, subdir.Name);
 					DirectoryCopy(subdir.FullName, temppath, copySubDirs);
 				}
+			}
+		}
+
+		private void txtSongSearch_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (Char)Keys.Enter)
+			{
+				if (lstFiles.SelectedIndices.Count == 1)
+				{
+					lstFiles_KeyPress(sender, e);
+				}
+			}
+			if (e.KeyChar == (Char)Keys.Escape)
+			{
+				txtSongSearch.Text = "";
 			}
 		}
 	}

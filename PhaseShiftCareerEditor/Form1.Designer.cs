@@ -43,8 +43,19 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.btnAddSongs = new System.Windows.Forms.Button();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.importProgress = new System.Windows.Forms.ProgressBar();
+			this.btnImportDirs = new System.Windows.Forms.Button();
+			this.btnImportZips = new System.Windows.Forms.Button();
+			this.btnRefresh = new System.Windows.Forms.Button();
+			this.btnBrows = new System.Windows.Forms.Button();
+			this.btnNewFolder = new System.Windows.Forms.Button();
+			this.btnClear = new System.Windows.Forms.Button();
 			this.txtSongSearch = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
+			this.btnMoveSongDown = new System.Windows.Forms.Button();
+			this.btnMoveSongUp = new System.Windows.Forms.Button();
+			this.btnMoveTierDown = new System.Windows.Forms.Button();
+			this.btnMoveTierUp = new System.Windows.Forms.Button();
 			this.btnAddTier = new System.Windows.Forms.Button();
 			this.lstCareers = new System.Windows.Forms.ListBox();
 			this.btnNewCareer = new System.Windows.Forms.Button();
@@ -52,19 +63,8 @@
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.installDirFinder = new System.Windows.Forms.FolderBrowserDialog();
 			this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-			this.btnImportDirs = new System.Windows.Forms.Button();
-			this.btnImportZips = new System.Windows.Forms.Button();
-			this.btnRefresh = new System.Windows.Forms.Button();
-			this.btnBrows = new System.Windows.Forms.Button();
-			this.btnNewFolder = new System.Windows.Forms.Button();
-			this.btnClear = new System.Windows.Forms.Button();
-			this.btnMoveSongDown = new System.Windows.Forms.Button();
-			this.btnMoveSongUp = new System.Windows.Forms.Button();
-			this.btnMoveTierDown = new System.Windows.Forms.Button();
-			this.btnMoveTierUp = new System.Windows.Forms.Button();
 			this.directoryImporter = new System.Windows.Forms.FolderBrowserDialog();
 			this.compressedFileImporter = new System.Windows.Forms.OpenFileDialog();
-			this.importProgress = new System.Windows.Forms.ProgressBar();
 			this.groupBox2.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
@@ -255,88 +255,14 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Songs";
 			// 
-			// txtSongSearch
+			// importProgress
 			// 
-			this.txtSongSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.importProgress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.txtSongSearch.Location = new System.Drawing.Point(81, 43);
-			this.txtSongSearch.Name = "txtSongSearch";
-			this.txtSongSearch.Size = new System.Drawing.Size(330, 20);
-			this.txtSongSearch.TabIndex = 4;
-			this.txtSongSearch.TextChanged += new System.EventHandler(this.txtSongSearch_TextChanged);
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(6, 46);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(69, 13);
-			this.label2.TabIndex = 15;
-			this.label2.Text = "Search Filter:";
-			// 
-			// btnAddTier
-			// 
-			this.btnAddTier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnAddTier.Location = new System.Drawing.Point(447, 201);
-			this.btnAddTier.Name = "btnAddTier";
-			this.btnAddTier.Size = new System.Drawing.Size(86, 23);
-			this.btnAddTier.TabIndex = 8;
-			this.btnAddTier.Text = "New";
-			this.btnAddTier.UseVisualStyleBackColor = true;
-			this.btnAddTier.Click += new System.EventHandler(this.btnAddTier_Click);
-			// 
-			// lstCareers
-			// 
-			this.lstCareers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.lstCareers.FormattingEnabled = true;
-			this.lstCareers.Location = new System.Drawing.Point(6, 19);
-			this.lstCareers.Name = "lstCareers";
-			this.lstCareers.Size = new System.Drawing.Size(188, 407);
-			this.lstCareers.TabIndex = 0;
-			this.lstCareers.SelectedIndexChanged += new System.EventHandler(this.lstCareers_SelectedIndexChanged);
-			this.lstCareers.DoubleClick += new System.EventHandler(this.lstCareers_DoubleClick);
-			// 
-			// btnNewCareer
-			// 
-			this.btnNewCareer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.btnNewCareer.Location = new System.Drawing.Point(6, 445);
-			this.btnNewCareer.Name = "btnNewCareer";
-			this.btnNewCareer.Size = new System.Drawing.Size(75, 23);
-			this.btnNewCareer.TabIndex = 1;
-			this.btnNewCareer.Text = "New";
-			this.btnNewCareer.UseVisualStyleBackColor = true;
-			this.btnNewCareer.Click += new System.EventHandler(this.btnNewCareer_Click);
-			// 
-			// btnDisableCareer
-			// 
-			this.btnDisableCareer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.btnDisableCareer.Location = new System.Drawing.Point(87, 445);
-			this.btnDisableCareer.Name = "btnDisableCareer";
-			this.btnDisableCareer.Size = new System.Drawing.Size(75, 23);
-			this.btnDisableCareer.TabIndex = 2;
-			this.btnDisableCareer.Text = "Disable";
-			this.btnDisableCareer.UseVisualStyleBackColor = true;
-			this.btnDisableCareer.Click += new System.EventHandler(this.btnDisableCareer_Click);
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-			this.groupBox1.Controls.Add(this.btnDisableCareer);
-			this.groupBox1.Controls.Add(this.btnNewCareer);
-			this.groupBox1.Controls.Add(this.lstCareers);
-			this.groupBox1.Location = new System.Drawing.Point(12, 12);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(200, 474);
-			this.groupBox1.TabIndex = 2;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Careers";
-			// 
-			// installDirFinder
-			// 
-			this.installDirFinder.ShowNewFolderButton = false;
+			this.importProgress.Location = new System.Drawing.Point(176, 444);
+			this.importProgress.Name = "importProgress";
+			this.importProgress.Size = new System.Drawing.Size(265, 23);
+			this.importProgress.TabIndex = 22;
 			// 
 			// btnImportDirs
 			// 
@@ -410,6 +336,29 @@
 			this.btnClear.UseVisualStyleBackColor = true;
 			this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
 			// 
+			// txtSongSearch
+			// 
+			this.txtSongSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtSongSearch.Location = new System.Drawing.Point(81, 43);
+			this.txtSongSearch.Name = "txtSongSearch";
+			this.txtSongSearch.Size = new System.Drawing.Size(330, 20);
+			this.txtSongSearch.TabIndex = 4;
+			this.toolTip1.SetToolTip(this.txtSongSearch, "Filters down the results below to items that contain this string. Tip: press ente" +
+        "r in this box when there is only one song below to add it directly to the curren" +
+        "t tier.");
+			this.txtSongSearch.TextChanged += new System.EventHandler(this.txtSongSearch_TextChanged);
+			this.txtSongSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSongSearch_KeyPress);
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(6, 46);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(69, 13);
+			this.label2.TabIndex = 15;
+			this.label2.Text = "Search Filter:";
+			// 
 			// btnMoveSongDown
 			// 
 			this.btnMoveSongDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -454,6 +403,70 @@
 			this.btnMoveTierUp.UseVisualStyleBackColor = true;
 			this.btnMoveTierUp.Click += new System.EventHandler(this.btnMoveTierUp_Click);
 			// 
+			// btnAddTier
+			// 
+			this.btnAddTier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnAddTier.Location = new System.Drawing.Point(447, 201);
+			this.btnAddTier.Name = "btnAddTier";
+			this.btnAddTier.Size = new System.Drawing.Size(86, 23);
+			this.btnAddTier.TabIndex = 8;
+			this.btnAddTier.Text = "New";
+			this.btnAddTier.UseVisualStyleBackColor = true;
+			this.btnAddTier.Click += new System.EventHandler(this.btnAddTier_Click);
+			// 
+			// lstCareers
+			// 
+			this.lstCareers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.lstCareers.FormattingEnabled = true;
+			this.lstCareers.Location = new System.Drawing.Point(6, 19);
+			this.lstCareers.Name = "lstCareers";
+			this.lstCareers.Size = new System.Drawing.Size(188, 407);
+			this.lstCareers.TabIndex = 0;
+			this.lstCareers.SelectedIndexChanged += new System.EventHandler(this.lstCareers_SelectedIndexChanged);
+			this.lstCareers.DoubleClick += new System.EventHandler(this.lstCareers_DoubleClick);
+			// 
+			// btnNewCareer
+			// 
+			this.btnNewCareer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.btnNewCareer.Location = new System.Drawing.Point(6, 445);
+			this.btnNewCareer.Name = "btnNewCareer";
+			this.btnNewCareer.Size = new System.Drawing.Size(75, 23);
+			this.btnNewCareer.TabIndex = 1;
+			this.btnNewCareer.Text = "New";
+			this.btnNewCareer.UseVisualStyleBackColor = true;
+			this.btnNewCareer.Click += new System.EventHandler(this.btnNewCareer_Click);
+			// 
+			// btnDisableCareer
+			// 
+			this.btnDisableCareer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.btnDisableCareer.Location = new System.Drawing.Point(87, 445);
+			this.btnDisableCareer.Name = "btnDisableCareer";
+			this.btnDisableCareer.Size = new System.Drawing.Size(75, 23);
+			this.btnDisableCareer.TabIndex = 2;
+			this.btnDisableCareer.Text = "Disable";
+			this.btnDisableCareer.UseVisualStyleBackColor = true;
+			this.btnDisableCareer.Click += new System.EventHandler(this.btnDisableCareer_Click);
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+			this.groupBox1.Controls.Add(this.btnDisableCareer);
+			this.groupBox1.Controls.Add(this.btnNewCareer);
+			this.groupBox1.Controls.Add(this.lstCareers);
+			this.groupBox1.Location = new System.Drawing.Point(12, 12);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(200, 474);
+			this.groupBox1.TabIndex = 2;
+			this.groupBox1.TabStop = false;
+			this.groupBox1.Text = "Careers";
+			// 
+			// installDirFinder
+			// 
+			this.installDirFinder.ShowNewFolderButton = false;
+			// 
 			// directoryImporter
 			// 
 			this.directoryImporter.Description = "Select folders containing music to import.";
@@ -462,15 +475,6 @@
 			// compressedFileImporter
 			// 
 			this.compressedFileImporter.Multiselect = true;
-			// 
-			// importProgress
-			// 
-			this.importProgress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.importProgress.Location = new System.Drawing.Point(176, 444);
-			this.importProgress.Name = "importProgress";
-			this.importProgress.Size = new System.Drawing.Size(265, 23);
-			this.importProgress.TabIndex = 22;
 			// 
 			// frmMain
 			// 
@@ -483,7 +487,7 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MinimumSize = new System.Drawing.Size(767, 392);
 			this.Name = "frmMain";
-			this.Text = "JSideris\' Phase Shift Career Editor V0.1";
+			this.Text = "JSideris\' Phase Shift Career Editor V0.2";
 			this.Load += new System.EventHandler(this.frmMain_Load);
 			this.Resize += new System.EventHandler(this.frmMain_Resize);
 			this.groupBox2.ResumeLayout(false);
