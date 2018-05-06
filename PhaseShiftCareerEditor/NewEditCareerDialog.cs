@@ -13,15 +13,16 @@ namespace PhaseShiftCareerEditor
 {
 	public partial class NewEditCareerDialog : Form
 	{
-		string defaultFsDirectory = @"C:\Program Files (x86)\Phase Shift";
-		string defaultFsMusicDirectory = @"C:\Program Files (x86)\Phase Shift\music";
-		string defaultFsCareerDirectory = @"C:\Program Files (x86)\Phase Shift\careers";
+		//string defaultFsDirectory = @"C:\Program Files (x86)\Phase Shift";
+		//string defaultFsMusicDirectory = @"C:\Program Files (x86)\Phase Shift\music";
+		//string defaultFsCareerDirectory = @"C:\Program Files (x86)\Phase Shift\careers";
 		string originalCareerName = null;
 		frmMain parent = null;
 
 		public NewEditCareerDialog(frmMain mainform, int? selectedCareerIndex = null)
 		{
-			InitializeComponent();
+
+            InitializeComponent();
 
 			if (selectedCareerIndex != null)
 			{
@@ -59,7 +60,7 @@ namespace PhaseShiftCareerEditor
 				return;
 			}
 
-			string newDirectory = Path.Combine(defaultFsCareerDirectory, finalName);
+			string newDirectory = Path.Combine(parent.psCareerDirectory, finalName);
 			if ((originalCareerName == null || originalCareerName.ToLower() != finalName.ToLower()) && Directory.Exists(newDirectory)) {
 				MessageBox.Show("The name you specified cannot be saved because a career already exists in a folder with the name \"" + finalName + "\".", "Invalid Career Name", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
 				return;
@@ -73,10 +74,10 @@ namespace PhaseShiftCareerEditor
 				}
 				else if(originalCareerName.ToLower() != finalName.ToLower()) {
 					//rename
-					Directory.Move(Path.Combine(defaultFsCareerDirectory, originalCareerName), newDirectory);
+					Directory.Move(Path.Combine(parent.psCareerDirectory, originalCareerName), newDirectory);
 				}
 
-				var newcareerini = Path.Combine(defaultFsCareerDirectory, finalName, "career.ini");
+				var newcareerini = Path.Combine(parent.psCareerDirectory, finalName, "career.ini");
 
 				//create a new newcareerini or overwrite
 
@@ -137,7 +138,7 @@ namespace PhaseShiftCareerEditor
 		private void NewEditCareerDialog_Load(object sender, EventArgs e)
 		{
 			if (originalCareerName != null) {
-				var careerini = Path.Combine(defaultFsCareerDirectory, originalCareerName, "career.ini");
+				var careerini = Path.Combine(parent.psCareerDirectory, originalCareerName, "career.ini");
 
 				var careerData = IniFileReader.ReadFile(careerini);
 

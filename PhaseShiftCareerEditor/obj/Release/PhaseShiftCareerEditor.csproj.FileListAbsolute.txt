@@ -10,3 +10,17 @@ C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\
 C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.pdb
 C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.NewFolder.resources
 C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.BigErrorDialog.resources
+C:\Users\Sideris\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.csprojResolveAssemblyReference.cache
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\bin\Release\PhaseShiftCareerEditor.exe.config
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\bin\Release\PhaseShiftCareerEditor.exe
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\bin\Release\PhaseShiftCareerEditor.pdb
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.BigErrorDialog.resources
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.frmMain.resources
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.NewEditCareerDialog.resources
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.NewEditTierDialog.resources
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.NewFolder.resources
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.Properties.Resources.resources
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.csproj.GenerateResource.cache
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.csproj.CoreCompileInputs.cache
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.exe
+C:\Users\josh_\Documents\GitHub\PhaseShiftCareerEditor\PhaseShiftCareerEditor\obj\Release\PhaseShiftCareerEditor.pdb

@@ -15,9 +15,9 @@ namespace PhaseShiftCareerEditor
 {
 	public partial class frmMain : Form
 	{
-		string psInstallDirectory = @"C:\Program Files (x86)\Phase Shift";
-		string psMusicDirectory = @"C:\Program Files (x86)\Phase Shift\music";
-		string psCareerDirectory = @"C:\Program Files (x86)\Phase Shift\careers";
+		public string psInstallDirectory = @"C:\Program Files (x86)\Phase Shift";
+		public string psMusicDirectory = @"C:\Program Files (x86)\Phase Shift\music";
+		public string psCareerDirectory = @"C:\Program Files (x86)\Phase Shift\careers";
 
 		string currentMusicFolder = "";
 
@@ -98,12 +98,13 @@ namespace PhaseShiftCareerEditor
 
 				}
 			}
-
-			if (psInstallDirectory != null)
+            if (psInstallDirectory != null)
 			{
 				psCareerDirectory = Path.Combine(psInstallDirectory, "careers");
 				psMusicDirectory = Path.Combine(psInstallDirectory, "music");
-			}
+                currentMusicFolder = psMusicDirectory;
+
+            }
 
 			if (psInstallDirectory == null || !Directory.Exists(psInstallDirectory))
 			{
